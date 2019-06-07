@@ -1,7 +1,8 @@
 package main
 
-import "fmt"
+import ("fmt"
+		"math/rand")
 
 func main() {
-	fmt.Printf("Hello, World\n")
+	fmt.Println("Hello random", rand.Intn(100) ) // capitalized functions are exported
 }
