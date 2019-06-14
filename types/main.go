@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 )
 
 var name string = "Foo"
@@ -21,6 +22,12 @@ func main() {
 	// complex64 complex128
 
 	size, email := 1.3, "foo@gmail.com" //sharthand for local variables
+
+	// Type conversion
+	// https://golang.org/pkg/strconv/
+	// strconv.Atoi (string to int)
+	// strconv.Itoa (int to string)
+	age := strconv.Itoa(age) + "y"
 
 	// fmt.Printf("%T\n", name) // get type
 	fmt.Println(name, age, size, email)
